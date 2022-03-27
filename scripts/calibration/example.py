@@ -32,7 +32,7 @@ from matplotlib import pyplot as plt
 from projection import Camera, RadialPolyCamProjection, CylindricalProjection, read_cam_from_json, \
     create_img_projection_maps
 
-
+#产生一个圆柱形相机
 def make_cylindrical_cam(cam: Camera):
     """generates a cylindrical camera with a centered horizon"""
     assert isinstance(cam.lens, RadialPolyCamProjection)
