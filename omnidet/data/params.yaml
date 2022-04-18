@@ -6,13 +6,13 @@
 #                                distance_semantic_detection, distance_semantic_detection_motion]
 train: distance_semantic_detection_motion
 
-dataset_dir: WoodScape_ICCV19/
-train_file: data/train.txt
-val_file: data/val.txt
-test_file: data/test.txt
+dataset_dir: /omnidet_data/WoodScape_ICCV19/
+train_file: /home/blowfish-g7/blowfish_fisheye/WoodScape/omnidet/data/train.txt
+val_file: /home/blowfish-g7/blowfish_fisheye/WoodScape/omnidet/data/val.txt
+test_file: /home/blowfish-g7/blowfish_fisheye/WoodScape/omnidet/data/test.txt
 
 # Path to save images, model weights of training
-output_directory: WoodScape_ICCV19/output/
+output_directory: /home/blowfish-g7/blowfish_fisheye/WoodScape/WoodScape_ICCV19/output/
 
 ################################
 # -- MODEL CONFIGS --
@@ -68,7 +68,7 @@ anchors3: [[52, 39], [92, 145], [101, 69]]
 #############################
 # -- TRAIN OPTIONS --
 #############################
-batch_size: 22                # training size of the model
+batch_size: 1                # training size of the model
 num_workers: 6                # Data loader workers
 epochs: 125                   # number of epochs
 learning_rate: 0.0001         # learning rate of the model

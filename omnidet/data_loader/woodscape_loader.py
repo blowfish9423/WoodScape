@@ -61,7 +61,7 @@ class WoodScapeRawDataset(data.Dataset):
                                               interpolation=transforms.InterpolationMode.NEAREST)
 
         if "distance" in self.task:
-            with open('data/LUTs.pkl', 'rb') as f:
+            with open('/home/blowfish-g7/blowfish_fisheye/WoodScape/omnidet/data/LUTs.pkl', 'rb') as f:
                 self.LUTs = pickle.load(f)
 
     def scale_intrinsic(self, intrinsics, cropped_coords) -> tuple:
